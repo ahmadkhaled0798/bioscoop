@@ -23,6 +23,16 @@
             <li><a href="#">Page 2</a></li>
             <li><a href="#">Page 3</a></li>
         </ul>
+        <ul class="navnavbar-nav">
+
+
+            <span><ul><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></ul></span>
+            <ul>
+                @if (Route::has('register'))
+                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                @endif
+            </ul>
+        </ul>
 
 
     </div>

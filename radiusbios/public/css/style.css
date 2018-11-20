@@ -149,3 +149,14 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #45a049;
 }
+.navnavbar-nav{
+    padding-top: 10px;
+    padding-right: 10px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.navnavbar-nav , ul , span{
+ /*margin-left: 50px;*/
+}
