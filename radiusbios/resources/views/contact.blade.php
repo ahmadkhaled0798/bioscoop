@@ -1,4 +1,4 @@
-@include('layouts.app')
+@include('layouts.header')
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -7,16 +7,17 @@
 
     <title>Contact</title>
 
-
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
 
 
 </head>
 <body>
-<div class="page">
-    <h1>contact</h1>
+<div class="contact-page">
+
 
     <div class="map">
+        <h1>contact</h1>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2478.090174668728!2d4.778021715502817!3d51.60323631151284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c69f990d127d8b%3A0x1e825fb420ca913c!2sRadius+College!5e0!3m2!1sen!2snl!4v1542702678514" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 
@@ -39,23 +40,18 @@
 
             <form action="" method="post" >
                 @csrf
-                <div class="div">
-                    <label for="">naam</label>
-                    <input name="name" type="text">
-                </div>
-                <div class="div">
-                    <label for="">email adress</label>
-                    <input name="email" type="email">
-                </div>
-                <div class="div">
-                    <label for="">telefoon nummer</label>
-                    <input name="text" type="tel">
-                </div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Jou naam..">
 
-                <div class="div">
-                    <label for="">bericht</label>
-                    <textarea name="contact_bericht" rows="3"></textarea>
-                </div>
+                <label for="email">email adress</label>
+                <input type="email" id="email" name="email" placeholder="Jou emailadress..">
+
+
+
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="jou bericht.." style="height:200px"></textarea>
+
 
 
 
@@ -68,5 +64,6 @@
     </div>
 
 </div>
+@include('layouts.footer')
 </body>
 </html>
