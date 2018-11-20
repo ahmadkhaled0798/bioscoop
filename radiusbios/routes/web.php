@@ -22,3 +22,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/contact' , function (){
     return view('contact');
 });
+
+Route::get('/faq' , function (){
+    return view('faq');
+});
