@@ -42,7 +42,7 @@
                     <li><a href="home"><i class="fa fa-angle-double-right"></i>Home</a></li>
                     <li><a href="contact"><i class="fa fa-angle-double-right"></i>Contact</a></li>
                     <li><a href="faq"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-
+                    <li><a href="privacy"><i class="fa fa-angle-double-right"></i>Privacy</a></li>
                 </ul>
             </div>
             {{--<div class="col-xs-12 col-sm-4 col-md-4">--}}

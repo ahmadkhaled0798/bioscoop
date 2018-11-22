@@ -27,3 +27,7 @@ Route::get('/contact' , function (){
 Route::get('/faq' , function (){
     return view('faq');
 });
+
+Route::get('/privacy' , function (){
+    return view('privacy');
+});

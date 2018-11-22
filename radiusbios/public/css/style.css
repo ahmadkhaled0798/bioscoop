@@ -224,3 +224,17 @@ input[type=submit]:hover {
 .images-content h3{
     text-align: center;
 }
+
+
+.privacy{
+    margin:50px 50px;
+}
+
+.privacy h1{
+    padding:25px 0;
+}
+
+.privacy p{
+    color:#000;
+}
+
