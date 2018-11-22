@@ -220,3 +220,7 @@ input[type=submit]:hover {
     margin-top: 100px;
     text-align: center;
 }
+
+.images-content h3{
+    text-align: center;
+}

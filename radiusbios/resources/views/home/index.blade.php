@@ -39,7 +39,7 @@
 
     <div class="images">
 
-        @for($i = 0; $i <= 4; $i++)
+        @for($i = 0; $i <= 3; $i++)
             <div class="images-content">
                 <a href=""><img style="-webkit-user-select: none;" src="https://img.omdbapi.com/?i=tt2093100&amp;apikey=c8307ab5"></a>
                 <h3>name movie</h3>

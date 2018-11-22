@@ -46,16 +46,8 @@
                 <label for="email">email adress</label>
                 <input type="email" id="email" name="email" placeholder="Jou emailadress..">
 
-
-
-
                 <label for="subject">Subject</label>
                 <textarea id="subject" name="subject" placeholder="jou bericht.." style="height:200px"></textarea>
-
-
-
-
-
 
                 <input type="submit" value="send form">
 
