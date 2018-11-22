@@ -40,65 +40,19 @@
 
         <div class="middle">
 
-            <div class="middle-content">
-                <div class="middle-content-img"><img src="https://via.placeholder.com/200x200" alt=""></div>
-                <div class="middle-content-text">
+                @for ($i = 0; $i <= 10; $i++)
+                <div class="middle-content">
+                    <div class="middle-content-img"><a href=""><img style="-webkit-user-select: none;" src="https://img.omdbapi.com/?i=tt2093100&amp;apikey=c8307ab5"></a></div>
+                    <div class="middle-content-text">
                         <h2>naam movie</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequuntur dicta doloribus, eligendi iste obcaecati quasi? Aliquid deserunt ducimus et exercitationem, explicabo itaque neque nostrum sunt ullam ut vitae voluptas.</p>
                         <p>16:15 - 18:46</p>
                         <p>zaal 3</p>
+                    </div>
                 </div>
-            </div>
+                @endfor
 
-            <div class="middle-content">
-                <div class="middle-content-img"><img src="https://via.placeholder.com/200x200" alt=""></div>
-                <div class="middle-content-text">
-                    <h2>naam movie</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequuntur dicta doloribus, eligendi iste obcaecati quasi? Aliquid deserunt ducimus et exercitationem, explicabo itaque neque nostrum sunt ullam ut vitae voluptas.</p>
-                    <p>16:15 - 18:46</p>
-                    <p>zaal 3</p>
-                </div>
-            </div>
 
-            <div class="middle-content">
-                <div class="middle-content-img"><img src="https://via.placeholder.com/200x200" alt=""></div>
-                <div class="middle-content-text">
-                    <h2>naam movie</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequuntur dicta doloribus, eligendi iste obcaecati quasi? Aliquid deserunt ducimus et exercitationem, explicabo itaque neque nostrum sunt ullam ut vitae voluptas.</p>
-                    <p>16:15 - 18:46</p>
-                    <p>zaal 3</p>
-                </div>
-            </div>
-
-            <div class="middle-content">
-                <div class="middle-content-img"><img src="https://via.placeholder.com/200x200" alt=""></div>
-                <div class="middle-content-text">
-                    <h2>naam movie</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequuntur dicta doloribus, eligendi iste obcaecati quasi? Aliquid deserunt ducimus et exercitationem, explicabo itaque neque nostrum sunt ullam ut vitae voluptas.</p>
-                    <p>16:15 - 18:46</p>
-                    <p>zaal 3</p>
-                </div>
-            </div>
-
-            <div class="middle-content">
-                <div class="middle-content-img"><img src="https://via.placeholder.com/200x200" alt=""></div>
-                <div class="middle-content-text">
-                    <h2>naam movie</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequuntur dicta doloribus, eligendi iste obcaecati quasi? Aliquid deserunt ducimus et exercitationem, explicabo itaque neque nostrum sunt ullam ut vitae voluptas.</p>
-                    <p>16:15 - 18:46</p>
-                    <p>zaal 3</p>
-                </div>
-            </div>
-
-            <div class="middle-content">
-                <div class="middle-content-img"><img src="https://via.placeholder.com/200x200" alt=""></div>
-                <div class="middle-content-text">
-                    <h2>naam movie</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequuntur dicta doloribus, eligendi iste obcaecati quasi? Aliquid deserunt ducimus et exercitationem, explicabo itaque neque nostrum sunt ullam ut vitae voluptas.</p>
-                    <p>16:15 - 18:46</p>
-                    <p>zaal 3</p>
-                </div>
-            </div>
         </div>
 
     </div>
