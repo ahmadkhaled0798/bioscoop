@@ -1,6 +1,13 @@
 body{
     font-family: "Calibri Light";
+
 }
+
+a , h1 , h2 , h3 , h4 , h5 , p , label , button{
+    color: #f4c242;
+}
+
+
 .faq-content{
     margin-left: 100px;
     margin-right: 100px;
@@ -70,11 +77,11 @@ section .section-title {
     /*border-left: 3px solid #eeeeee;*/
     padding-bottom: 6px;
     margin-bottom: 20px;
-    color:#ffffff;
+    color: #f4c242;
     font-size: 20px;
 }
 #footer a {
-    color: #ffffff;
+    color: #f4c242;
     text-decoration: none !important;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
@@ -95,10 +102,10 @@ section .section-title {
 }
 #footer ul.social li a,
 #footer ul.quick-links li a{
-    color:#ffffff;
+    color: #f4c242;
 }
 #footer ul.social li a:hover{
-    color:#eeeeee;
+    color: #f4c242;
 }
 #footer ul.quick-links li{
     padding: 3px 0;
@@ -145,7 +152,7 @@ input[type=text],input[type=email] , select, textarea {
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
     background-color: #a94442;
-    color: white;
+    color: #f4c242;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -154,7 +161,7 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #000000;
 }
 .navnavbar-nav{
     padding-top: 10px;
@@ -209,7 +216,7 @@ input[type=submit]:hover {
     margin-left: 100px;
     margin-right: 100px;
 }
-.title{
+.top-movies{
     margin-top: 100px;
     text-align: center;
 }

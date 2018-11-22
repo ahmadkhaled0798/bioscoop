@@ -32,7 +32,7 @@
             <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
         </div>
     </div>
-    <div class="title">
+    <div class="top-movies">
         <h1>top movies</h1>
     </div>
     <div class="images">
