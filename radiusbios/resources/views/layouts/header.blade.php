@@ -21,7 +21,7 @@
             <li class="active"><a href="films">films</a></li>
             <li><a href="contact">contact</a></li>
             <li><a href="faq">FAQ</a></li>
-            <li><a href="#">Page 3</a></li>
+
         </ul>
         <ul class="navnavbar-nav">
 

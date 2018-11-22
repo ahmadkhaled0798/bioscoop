@@ -177,6 +177,7 @@ input[type=submit]:hover {
 .content-films{
 
     padding-top: 100px;
+
 }
 .top{
     display: grid;
@@ -198,4 +199,17 @@ input[type=submit]:hover {
 .middle-content-text{
 
     padding-left: 50px;
+}
+
+
+.images{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.title{
+    margin-top: 100px;
+    text-align: center;
 }

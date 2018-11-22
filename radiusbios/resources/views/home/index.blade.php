@@ -32,6 +32,36 @@
             <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
         </div>
     </div>
+    <div class="title">
+        <h1>top movies</h1>
+    </div>
+    <div class="images">
+        <div class="images-content">
+            <a href=""><img src="https://via.placeholder.com/200x300" alt=""></a>
+            <h2>name movie</h2>
+        </div>
+
+        <div class="images-content">
+            <a href=""><img src="https://via.placeholder.com/200x300" alt=""></a>
+            <h2>name movie</h2>
+        </div>
+
+        <div class="images-content">
+            <a href=""><img src="https://via.placeholder.com/200x300" alt=""></a>
+            <h2>name movie</h2>
+        </div>
+
+        <div class="images-content">
+            <a href=""><img src="https://via.placeholder.com/200x300" alt=""></a>
+            <h2>name movie</h2>
+        </div>
+
+        <div class="images-content">
+            <a href=""><img src="https://via.placeholder.com/200x300" alt=""></a>
+            <h2>name movie</h2>
+        </div>
+
+    </div>
     <script>
         var slideIndex = 1;
         showDivs(slideIndex);

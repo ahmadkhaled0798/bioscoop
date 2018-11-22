@@ -39,6 +39,7 @@
         </div>
 
         <div class="middle">
+
             <div class="middle-content">
                 <div class="middle-content-img"><img src="https://via.placeholder.com/200x200" alt=""></div>
                 <div class="middle-content-text">
