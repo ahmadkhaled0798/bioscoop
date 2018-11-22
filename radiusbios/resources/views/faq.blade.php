@@ -1,4 +1,4 @@
-@include('layouts.app')
+@include('layouts.header')
         <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -41,7 +41,7 @@
             margin-left: 5px;
         }
 
-        .active:after {
+        .active1:after {
             content: "\2796"; /* Unicode character for "minus" sign (-) */
         }
     </style>
@@ -51,10 +51,11 @@
 
 </head>
 <body>
+<div class="faq-page">
 
-    <h1>FAQ</h1>
 
     <div class="faq-content">
+        <h1>FAQ</h1>
         <button class="accordion">vraag 1</button>
         <div class="panel">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus aliquam beatae blanditiis consequuntur dolorem eligendi enim est et, eum incidunt itaque libero neque, officia quia rerum, saepe sequi totam!</p>
@@ -69,6 +70,8 @@
         <div class="panel">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dignissimos et facere laborum laudantium, minus mollitia porro quas quod rem? Corporis culpa fugit, inventore ipsa labore nulla quas quis saepe.</p>
         </div>
+
+    </div>
     </div>
 
     <script>
@@ -77,7 +80,7 @@
 
         for (i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
+                this.classList.toggle("active1");
                 var panel = this.nextElementSibling;
                 if (panel.style.maxHeight){
                     panel.style.maxHeight = null;
@@ -87,6 +90,6 @@
             });
         }
     </script>
-
+    @include('layouts.footer')
 </body>
 </html>
