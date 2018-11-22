@@ -18,7 +18,7 @@
             <a class="navbar-brand" href="home">Bioscoop</a>
         </div>
         <ul class="nav navbar-nav">
-            <li class="active"><a href="#">films</a></li>
+            <li class="active"><a href="films">films</a></li>
             <li><a href="contact">contact</a></li>
             <li><a href="faq">FAQ</a></li>
             <li><a href="#">Page 3</a></li>

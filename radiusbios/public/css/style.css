@@ -71,6 +71,7 @@ section .section-title {
     padding-bottom: 6px;
     margin-bottom: 20px;
     color:#ffffff;
+    font-size: 20px;
 }
 #footer a {
     color: #ffffff;
@@ -143,7 +144,7 @@ input[type=text],input[type=email] , select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: #a94442;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -167,6 +168,34 @@ input[type=submit]:hover {
  /*margin-left: 50px;*/
 }
 .home-page{
-    padding-top: 100px
-;
+    padding-top: 100px;
+}
+.films-page{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.content-films{
+
+    padding-top: 100px;
+}
+.top{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 30px;
+
+
+}
+.top button{
+    margin-top: 20px;
+}
+
+.middle-content{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    margin-top: 40px;
+}
+.middle-content-text{
+
+    padding-left: 50px;
 }
