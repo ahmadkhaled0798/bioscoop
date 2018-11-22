@@ -41,7 +41,7 @@
             margin-left: 5px;
         }
 
-        .active:after {
+        .active1:after {
             content: "\2796"; /* Unicode character for "minus" sign (-) */
         }
     </style>
@@ -80,7 +80,7 @@
 
         for (i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
+                this.classList.toggle("active1");
                 var panel = this.nextElementSibling;
                 if (panel.style.maxHeight){
                     panel.style.maxHeight = null;

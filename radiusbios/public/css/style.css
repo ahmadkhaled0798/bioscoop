@@ -51,6 +51,7 @@ body{
 section {
     padding: 60px 0;
     margin-top: 100px;
+
 }
 
 section .section-title {
@@ -61,10 +62,12 @@ section .section-title {
 }
 #footer {
     background: black !important;
+    display: flex;
+    justify-content: space-around;
 }
 #footer h5{
     padding-left: 10px;
-    border-left: 3px solid #eeeeee;
+    /*border-left: 3px solid #eeeeee;*/
     padding-bottom: 6px;
     margin-bottom: 20px;
     color:#ffffff;
@@ -123,6 +126,9 @@ section .section-title {
     }
 }
 
+section , .container{
+    text-align: center;
+}
 /* Style inputs with type="text", select elements and textareas */
 input[type=text],input[type=email] , select, textarea {
     width: 100%; /* Full width */

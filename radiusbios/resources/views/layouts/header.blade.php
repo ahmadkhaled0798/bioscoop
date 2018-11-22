@@ -19,8 +19,8 @@
         </div>
         <ul class="nav navbar-nav">
             <li class="active"><a href="#">films</a></li>
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#">Page 2</a></li>
+            <li><a href="contact">contact</a></li>
+            <li><a href="faq">FAQ</a></li>
             <li><a href="#">Page 3</a></li>
         </ul>
         <ul class="navnavbar-nav">
@@ -37,6 +37,8 @@
 
     </div>
 </nav>
+
+@yield('content')
 
 </body>
 </html>
