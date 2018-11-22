@@ -4,7 +4,7 @@ body{
 }
 
 a , h1 , h2 , h3 , h4 , h5 , p , label , button{
-    color: #f4c242;
+    color: #ffb700;
 }
 
 
@@ -218,5 +218,9 @@ input[type=submit]:hover {
 }
 .top-movies{
     margin-top: 100px;
+    text-align: center;
+}
+
+.images-content h3{
     text-align: center;
 }

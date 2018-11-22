@@ -35,31 +35,17 @@
     <div class="top-movies">
         <h1>top movies</h1>
     </div>
+
+
     <div class="images">
-        <div class="images-content">
-            <a href=""><img src="https://via.placeholder.com/200x300" alt=""></a>
-            <h2>name movie</h2>
-        </div>
 
-        <div class="images-content">
-            <a href=""><img src="https://via.placeholder.com/200x300" alt=""></a>
-            <h2>name movie</h2>
-        </div>
+        @for($i = 0; $i <= 3; $i++)
+            <div class="images-content">
+                <a href=""><img style="-webkit-user-select: none;" src="https://img.omdbapi.com/?i=tt2093100&amp;apikey=c8307ab5"></a>
+                <h3>name movie</h3>
+            </div>
+        @endfor
 
-        <div class="images-content">
-            <a href=""><img src="https://via.placeholder.com/200x300" alt=""></a>
-            <h2>name movie</h2>
-        </div>
-
-        <div class="images-content">
-            <a href=""><img src="https://via.placeholder.com/200x300" alt=""></a>
-            <h2>name movie</h2>
-        </div>
-
-        <div class="images-content">
-            <a href=""><img src="https://via.placeholder.com/200x300" alt=""></a>
-            <h2>name movie</h2>
-        </div>
 
     </div>
     <script>
