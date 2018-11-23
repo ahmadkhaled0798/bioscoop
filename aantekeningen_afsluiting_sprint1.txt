@@ -1,0 +1,64 @@
+niet doorslaan in enthousiasme hou je aan de user stories
+het thema / de stijl moet op alle pagina's hetzelfde 
+
+faq page lettertype groter, lettertype en grote is niet consistent met alle pagina's dit moet wel
+goude kleur bevalt goed
+
+goud is soms wat moeilijker te lezen kijk of lettergrote veranderen de leesbaarheid helpt
+
+afspraak 
+
+niet allemaal aan hetzelfde werken hou je eerst aan je taken
+pull eerst van de git voor je verder werkt aan je code
+niet allemaal te gelijk pushen maar aan het eind van de dag een voor een pushen om fouten te voorkomen
+maak je user storie eerst echt af voor je verder gaat
+kijk goed naar complexiteit van user stories voor je eraan begint
+stoel is het belangrijkst in de ERD (stoel staat centraal, stoel staat aan zaal staat aan film staat aan ticket staat aan klant)
+
+
+minder weetje zeggen ayub
+
+
+
+retrospective
+
+
+last van vaak terug gestuurd worden door fer(scrum master) m.b.t. de ERD goedkeuren
+tabel moest toegevoegd worden en dag erna moest diezelfde tabel weer weg
+
+sla de oude versies van je ERD's op als die geupdate wordt niet meerderen versies maken
+
+beter prioriteiten stellen (ERD eerst anders komt de rest niet af)
+
+daily stand up moet concreter(duidelijker, zorg dat het scrumbord in orde is)
+
+zeg het bij je stand up of tijdens het werk als je vast loopt of als je hulp nodig hebt niet de taak per se overnemen
+als er mensen lang bezig zijn met een user storie vraag of ze hulp nodig hebben of kijk even mee waar ze vastlopen
+
+eerlijker zijn over je deadline en zeg het als je denkt dat je de deadline niet kan halen(tijdens de stand up of tijdens het werk)
+
+duidelijken afspraken opschrijven voor pushen met git
+
+moeten definitief een wireframe maken zodat iedereen hetzelfde beeld heeft over de site en hoe alles moet zijn
+
+rollen serieuzer nemen / eraan houden 
+
+wat verwacht je van elke rol 
+maak overzicht van wat er van ze verwacht wordt
+
+team
+houd zich bezig met bord veranderen / bijhouden
+
+technisch 
+
+
+ahmad wilt meer coden moeten we volgende week tijdens verdeling rekening mee houden
+
+niet iedereen altijd zijn beste vak laten doen laat iedereen beter worden in vakken waar ze niet goed in zijn
+
+
+
+
+
+
+
