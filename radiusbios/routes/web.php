@@ -28,6 +28,12 @@ Route::get('/faq' , function (){
     return view('faq');
 });
 
-Route::get('/privacy' , function (){
+
+Route::get('/privacy' , function () {
     return view('privacy');
 });
+Route::get('/test' , function ()
+{
+    return view('testapi1');
+});
+
