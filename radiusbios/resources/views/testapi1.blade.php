@@ -14,7 +14,7 @@ if (!empty($_GET['movie'])) {
     $movie_url = 'http://www.omdbapi.com/?t='. urlencode($_GET['movie']).'&apikey=c8307ab5';
     $movie_json = file_get_contents($movie_url);
     $movie_array = json_decode($movie_json, true);
-    dd($movie_array);// $movie_array['id'];
+
 //    $title = $movie_array['title'];
 //    $plot= $movie_array['plot'];
 //    $image = $movie_array['poster'];
@@ -46,15 +46,24 @@ if (!empty($_GET['movie'])) {
 </form>
 
 
-{{--<div id="results" data-url="<?php if (!empty($url)) echo $url ?>">--}}
-    {{--<?php--}}
-    {{--if (!empty($movie_array)) {--}}
-        {{--foreach ($movie_array as $) {--}}
-            {{--echo $item['Title'];--}}
-        {{--}--}}
-    {{--}--}}
-    {{--?>--}}
-{{--</div>--}}
+<div class="result">
+    <div class="img">
+        @if(!empty($movie_array) && !empty($_GET['movie']))
+            <img src="<?php echo $movie_array['Poster'];?>" alt="">
+            @endif
+    </div>
+    <div class="title">
+        @if(!empty($movie_array) && !empty($_GET['movie']))
+            <p><?php echo $movie_array['Title'];?></p>
+        @endif
+    </div>
+
+    <div class="beschrijving">
+        @if(!empty($movie_array) && !empty($_GET['movie']))
+            <p><?php echo $movie_array['Plot'];?></p>
+        @endif
+    </div>
+</div>
 
 
 

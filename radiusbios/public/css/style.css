@@ -238,3 +238,6 @@ input[type=submit]:hover {
     color:#000;
 }
 
+.container{
+    margin-top: 100px;
+}
