@@ -37,3 +37,7 @@ Route::get('/test' , function ()
     return view('testapi1');
 });
 
+Route::get('/mix' , function ()
+{
+    return view('mix');
+});
