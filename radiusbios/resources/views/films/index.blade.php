@@ -1,62 +1,89 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: ayub cige
- * Date: 22-11-2018
- * Time: 10:03
- */
-?>
-@include('layouts.header')
-        <!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>films</title>
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-<div class="content-films">
-    <div class="films-page">
+    <?php
+        $date_format = ('d-m-y');
+        $today = strtotime('now');
+        $tomorrow1 = strtotime('+1 day', $today);
+        $tomorrow2 = strtotime('+2 day', $today);
+        $tomorrow3 = strtotime('+3 day', $today);
+        $tomorrow4 = strtotime('+4 day', $today);
+        $tomorrow5 = strtotime('+5 day', $today);
+        $tomorrow6 = strtotime('+6 day', $today);
+        $tomorrow7 = strtotime('+7 day', $today);
+        $tomorrow8 = strtotime('+8 day', $today);
+        $tomorrow9 = strtotime('+9 day', $today);
+        $tomorrow10 = strtotime('+10 day', $today);
+        $tomorrow11 = strtotime('+11 day', $today);
+        $tomorrow12 = strtotime('+12 day', $today);
+    ?>
 
-        <div class="top">
-            <div class="title"><h1>tijden en tickets vandaag</h1></div>
+    @include('layouts.header')
 
-            <div class="w3-dropdown-hover w3-right">
-                <button class="w3-button w3-black">Dropdown</button>
-                <div class="w3-dropdown-content w3-bar-block w3-border">
-                    <a href="#" class="w3-bar-item w3-button">vandaag</a>
-                    <a href="#" class="w3-bar-item w3-button">24-11-2018</a>
-                    <a href="#" class="w3-bar-item w3-button">25-11-2018</a>
-                    <a href="#" class="w3-bar-item w3-button">26-11-2018</a>
-                    <a href="#" class="w3-bar-item w3-button">27-11-2018</a>
+    <div class="content-films">
+        <div class="films-page">
 
-                </div>
-            </div>
-        </div>
+            <div class="top">
+                <div class="title"><h1>Films en tijden</h1></div>
+                <div class="w3-dropdown-hover w3-right">
+                    <button class="w3-button w3-black">Datums</button>
 
-        <div class="middle">
+                    <form action="{{route('search.function')}}" method="POST" >
+                        <label>Enter Movie Name</label>
+                        <input type="text" name="movie_name">
+                        <button type="submit">Search</button>
+                        @csrf
+                    </form>
 
-                @for ($i = 0; $i <= 10; $i++)
-                <div class="middle-content">
-                    <div class="middle-content-img"><a href=""><img style="-webkit-user-select: none;" src="https://img.omdbapi.com/?i=tt2093100&amp;apikey=c8307ab5"></a></div>
-                    <div class="middle-content-text">
-                        <h2>naam movie</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequuntur dicta doloribus, eligendi iste obcaecati quasi? Aliquid deserunt ducimus et exercitationem, explicabo itaque neque nostrum sunt ullam ut vitae voluptas.</p>
-                        <p>16:15 - 18:46</p>
-                        <p>zaal 3</p>
+                    <div class="w3-dropdown-content w3-bar-block w3-border">
+                        <a href="#" class="w3-bar-item w3-button">{{gmdate($date_format, $today)}}</a>
+                        <a href="#" class="w3-bar-item w3-button">{{gmdate($date_format, $tomorrow1)}}</a>
+                        <a href="#" class="w3-bar-item w3-button">{{gmdate($date_format, $tomorrow2)}}</a>
+                        <a href="#" class="w3-bar-item w3-button">{{gmdate($date_format, $tomorrow3)}}</a>
+                        <a href="#" class="w3-bar-item w3-button">{{gmdate($date_format, $tomorrow4)}}</a>
+                        <a href="#" class="w3-bar-item w3-button">{{gmdate($date_format, $tomorrow5)}}</a>
+                        <a href="#" class="w3-bar-item w3-button">{{gmdate($date_format, $tomorrow6)}}</a>
+                        <a href="#" class="w3-bar-item w3-button">{{gmdate($date_format, $tomorrow7)}}</a>
+                        <a href="#" class="w3-bar-item w3-button">{{gmdate($date_format, $tomorrow8)}}</a>
+                        <a href="#" class="w3-bar-item w3-button">{{gmdate($date_format, $tomorrow9)}}</a>
+                        <a href="#" class="w3-bar-item w3-button">{{gmdate($date_format, $tomorrow10)}}</a>
+                        <a href="#" class="w3-bar-item w3-button">{{gmdate($date_format, $tomorrow11)}}</a>
+                        <a href="#" class="w3-bar-item w3-button">{{gmdate($date_format, $tomorrow12)}}</a>
                     </div>
                 </div>
-                @endfor
+            </div>
+
+
+            {{--<div class="middle">--}}
+                {{--@foreach( $films as $film)--}}
+                    {{--<div class="middle-content">--}}
+                        {{--<img class="middle-content-img" src="{{$film->poster}}" alt="film poster">--}}
+                        {{--<div class="middle-content-text">--}}
+                            {{--<h2><a href="">{{$film->titel}}</a></h2>--}}
+                            {{--<p>{{$film->genre}}</p>--}}
+                            {{--<ul>--}}
+                                {{--@foreach($films as $film)--}}
+                                    {{--<li><a href="{{route('films.show', $film->id)}}">{{$film->begintijd, "-", $film->eindtijd}}</a></li>--}}
+                                {{--@endforeach--}}
+                            {{--</ul>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--@endforeach--}}
+            {{--</div>--}}
 
 
         </div>
-
     </div>
-</div>
+    @include('layouts.footer')
 </body>
 </html>
-@include('layouts.footer')
+
