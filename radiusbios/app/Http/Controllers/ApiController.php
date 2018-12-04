@@ -31,17 +31,29 @@ class ApiController extends Controller
                     //echo "<pre>";
                     //var_dump($obj);
                     //echo "</pre>";
-            echo "<center>API URL: " . $url . "<br>";
-            echo "Movie Name: " . $obj->Title . "<br>";
-            echo "<img src='" . $obj->Poster . "'></center><br>";
+//            echo "<center>API URL: " . $url . "<br>";
+//            echo "Movie Name: " . $obj->Title . "<br>";
+//            echo "<img src='" . $obj->Poster . "'></center><br>";
 
-            $stuff = $obj;
-            print json_encode($stuff);
+//            $stuff = $obj;
+//            print json_encode($stuff);
 
-//            foreach($obj as $key=>$val){
-//                {{$key.": ".$val."<br>";}}
-//
-//            }
+            if($obj->Response == "False"){
+                return "Movie not found";
+            }
+            else{
+                return view('filmpage')
+                    ->with('obj', $obj);
+            }
+
+
+
+
+
+                    //            foreach($obj as $key=>$val){
+                    //                {{$key.": ".$val."<br>";}}
+                    //
+                    //            }
 
         }
 

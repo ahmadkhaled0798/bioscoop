@@ -8,17 +8,24 @@
     <title>{{$obj->Title}}</title>
 </head>
     <body>
-        @include('layouts.footer')
+        @include('layouts.header')
+        <div class="content">
 
-        <img src="{{$obj->Poster}}">
-        <ul>
-            <li> Film Title: {{$obj->Title}} </li>
-            <li>Released: {{$obj->Released}}</li>
-            <li>Runtime: {{$obj->Runtime}} </li>
-            <li>Genre: {{$obj->Genre}}</li>
-            <li>Director: {{$obj->Director}}</li>
-        </ul>
+            <img src="{{$obj->Poster}}">
 
+            <ul>
+                <h1>{{$obj->Title}}</h1>
+                <li>Released: {{$obj->Released}}</li>
+                <li>Runtime: {{$obj->Runtime}} </li>
+                <li>Genre: {{$obj->Genre}}</li>
+                <li>Director: {{$obj->Director}}</li>
+                <li>Language: {{$obj->Language}}</li>
+                <li>Rated: {{$obj->Rated}}</li>
+                <li>Rating: {{$obj->imdbRating}}</li>
+                <br>
+                <p>{{$obj->Plot}}</p>
+            </ul>
+        </div>
         @include('layouts.footer')
     </body>
 </html>

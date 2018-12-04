@@ -34,30 +34,30 @@
 
             <div class="top">
                 <div class="title"><h1>Films en tijden</h1></div>
+
+                <form action="{{route('search.function')}}" method="POST" >
+                    <label>Enter Movie Name</label>
+                    <input type="text" name="movie_name">
+                    <button class="w3-button w3-black" type="submit">Search</button>
+                    @csrf
+                </form>
+
                 <div class="w3-dropdown-hover w3-right">
                     <button class="w3-button w3-black">Datums</button>
-
-                    <form action="{{route('search.function')}}" method="POST" >
-                        <label>Enter Movie Name</label>
-                        <input type="text" name="movie_name">
-                        <button type="submit">Search</button>
-                        @csrf
-                    </form>
-
                     <div class="w3-dropdown-content w3-bar-block w3-border">
-                        <a href="#" class="w3-bar-item w3-button">{{gmdate($date_format, $today)}}</a>
-                        <a href="#" class="w3-bar-item w3-button">{{gmdate($date_format, $tomorrow1)}}</a>
-                        <a href="#" class="w3-bar-item w3-button">{{gmdate($date_format, $tomorrow2)}}</a>
-                        <a href="#" class="w3-bar-item w3-button">{{gmdate($date_format, $tomorrow3)}}</a>
-                        <a href="#" class="w3-bar-item w3-button">{{gmdate($date_format, $tomorrow4)}}</a>
-                        <a href="#" class="w3-bar-item w3-button">{{gmdate($date_format, $tomorrow5)}}</a>
-                        <a href="#" class="w3-bar-item w3-button">{{gmdate($date_format, $tomorrow6)}}</a>
-                        <a href="#" class="w3-bar-item w3-button">{{gmdate($date_format, $tomorrow7)}}</a>
-                        <a href="#" class="w3-bar-item w3-button">{{gmdate($date_format, $tomorrow8)}}</a>
-                        <a href="#" class="w3-bar-item w3-button">{{gmdate($date_format, $tomorrow9)}}</a>
-                        <a href="#" class="w3-bar-item w3-button">{{gmdate($date_format, $tomorrow10)}}</a>
-                        <a href="#" class="w3-bar-item w3-button">{{gmdate($date_format, $tomorrow11)}}</a>
-                        <a href="#" class="w3-bar-item w3-button">{{gmdate($date_format, $tomorrow12)}}</a>
+                            <button class="btn" onclick="filterSelection({{gmdate($date_format, $today)}})">{{gmdate($date_format, $today)}}</button>
+                            <button class="btn" onclick="filterSelection({{gmdate($date_format, $tomorrow1)}})">{{gmdate($date_format, $tomorrow1)}}</button>
+                            <button class="btn" onclick="filterSelection({{gmdate($date_format, $tomorrow2)}})">{{gmdate($date_format, $tomorrow2)}}</button>
+                            <button class="btn" onclick="filterSelection({{gmdate($date_format, $tomorrow3)}})">{{gmdate($date_format, $tomorrow3)}}</button>
+                            <button class="btn" onclick="filterSelection({{gmdate($date_format, $tomorrow4)}})">{{gmdate($date_format, $tomorrow4)}}</button>
+                            <button class="btn" onclick="filterSelection({{gmdate($date_format, $tomorrow5)}})">{{gmdate($date_format, $tomorrow5)}}</button>
+                            <button class="btn" onclick="filterSelection({{gmdate($date_format, $tomorrow6)}})">{{gmdate($date_format, $tomorrow6)}}</button>
+                            <button class="btn" onclick="filterSelection({{gmdate($date_format, $tomorrow7)}})">{{gmdate($date_format, $tomorrow7)}}</button>
+                            <button class="btn" onclick="filterSelection({{gmdate($date_format, $tomorrow8)}})">{{gmdate($date_format, $tomorrow8)}}</button>
+                            <button class="btn" onclick="filterSelection({{gmdate($date_format, $tomorrow9)}})">{{gmdate($date_format, $tomorrow9)}}</button>
+                            <button class="btn" onclick="filterSelection({{gmdate($date_format, $tomorrow10)}})">{{gmdate($date_format, $tomorrow10)}}</button>
+                            <button class="btn" onclick="filterSelection({{gmdate($date_format, $tomorrow11)}})">{{gmdate($date_format, $tomorrow11)}}</button>
+                            <button class="btn" onclick="filterSelection({{gmdate($date_format, $tomorrow12)}})">{{gmdate($date_format, $tomorrow12)}}</button>
                     </div>
                 </div>
             </div>
