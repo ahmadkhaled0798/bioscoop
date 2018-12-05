@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\film;
+use App\Film;
 use Illuminate\Http\Request;
+
 
 class FilmController extends Controller
 {
@@ -14,8 +15,9 @@ class FilmController extends Controller
      */
     public function index()
     {
-        //
+
         return view('films/index');
+
     }
 
     /**
@@ -58,7 +60,7 @@ class FilmController extends Controller
      */
     public function edit(film $film)
     {
-        //
+
     }
 
     /**
@@ -83,4 +85,5 @@ class FilmController extends Controller
     {
         //
     }
+
 }

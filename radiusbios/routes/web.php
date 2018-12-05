@@ -37,3 +37,21 @@ Route::get('/test' , function ()
     return view('testapi1');
 });
 
+Route::get('/mix' , function ()
+{
+    return view('mix');
+});
+
+
+
+
+
+
+Route::get('/search', function () {
+    return view('search');
+});
+
+Route::post('/searchresult', 'ApiController@index')->name('search.function');
+
+
+Route::get('/filmpage', 'ApiController@show') ;
