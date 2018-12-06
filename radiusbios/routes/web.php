@@ -47,6 +47,7 @@ Route::get('/mix' , function ()
 
 
 
+
 Route::get('/search', function () {
     return view('search');
 });
