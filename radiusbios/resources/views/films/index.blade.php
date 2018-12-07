@@ -123,49 +123,65 @@
 
 
             <div class="filterDiv 8-12-18">
-                <img src="" alt="film poster">
+                <div class="images-content">
+                    <a href=""><img style="-webkit-user-select: none;" src="https://img.omdbapi.com/?i=tt2093100&amp;apikey=c8307ab5"></a>
+                </div>
                 <p>MOVIE TITLE 8-12-18</p>
                 <p>GENRE</p>
             </div>
 
             <div class="filterDiv 9-12-18">
-                <img src="" alt="film poster">
+                <div class="images-content">
+                    <a href=""><img style="-webkit-user-select: none;" src="https://img.omdbapi.com/?i=tt2093100&amp;apikey=c8307ab5"></a>
+                </div>
                 <p>MOVIE TITLE 9-12-18</p>
                 <p>GENRE</p>
             </div>
 
             <div class="filterDiv 10-12-18">
-                <img src="" alt="film poster">
+                <div class="images-content">
+                    <a href=""><img style="-webkit-user-select: none;" src="https://img.omdbapi.com/?i=tt2093100&amp;apikey=c8307ab5"></a>
+                </div>
                 <p>MOVIE TITLE 10-12-18</p>
                 <p>GENRE</p>
             </div>
 
             <div class="filterDiv 11-12-18">
-                <img src="" alt="film poster">
+                <div class="images-content">
+                    <a href=""><img style="-webkit-user-select: none;" src="https://img.omdbapi.com/?i=tt2093100&amp;apikey=c8307ab5"></a>
+                </div>
                 <p>MOVIE TITLE 11-12-18</p>
                 <p>GENRE</p>
             </div>
 
             <div class="filterDiv 12-12-18">
-                <img src="" alt="film poster">
+                <div class="images-content">
+                    <a href=""><img style="-webkit-user-select: none;" src="https://img.omdbapi.com/?i=tt2093100&amp;apikey=c8307ab5"></a>
+                </div>
                 <p>MOVIE TITLE 12-12-18</p>
                 <p>GENRE</p>
             </div>
 
             <div class="filterDiv 12-12-18">
-                <img src="" alt="film poster">
+                <div class="images-content">
+                    <a href=""><img style="-webkit-user-select: none;" src="https://img.omdbapi.com/?i=tt2093100&amp;apikey=c8307ab5"></a>
+                </div>
                 <p>MOVIE TITLE 12-12-18</p>
                 <p>GENRE</p>
             </div>
 
             <div class="filterDiv 12-12-18">
-                <img src="" alt="film poster">
+                <div class="images-content">
+                    <a href=""><img style="-webkit-user-select: none;" src="https://img.omdbapi.com/?i=tt2093100&amp;apikey=c8307ab5"></a>
+                </div>
                 <p>MOVIE TITLE 12-12-18</p>
                 <p>GENRE</p>
             </div>
 
             <div class="filterDiv 13-12-18">
-                <img src="" alt="film poster">
+                <div class="images-content">
+                    <a href=""><img style="-webkit-user-select: none;" src="https://img.omdbapi.com/?i=tt2093100&amp;apikey=c8307ab5"></a>
+                </div>
                 <p>MOVIE TITLE 13-12-18</p>
                 <p>GENRE</p>
             </div>
