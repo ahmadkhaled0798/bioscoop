@@ -18,3 +18,4 @@ class reservation extends Model
         return $this->hasMany('\App\hall');
     }
 }
+

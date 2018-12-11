@@ -15,13 +15,15 @@ class CreateHallsTable extends Migration
     {
         Schema::create('halls', function (Blueprint $table) {
             $table->increments('id');
-            $table->foreign('chair_nr')
-                ->references('id')
-                ->on('chairs');
+            $table->unsignedInteger('chair_nr');
             $table->string('hall_remark');
             $table->integer('rows');
             $table->double('hall_type');
             $table->timestamps();
+
+            $table->foreign('chair_nr')
+                ->references('id')
+                ->on('chairs');
         });
     }
 
