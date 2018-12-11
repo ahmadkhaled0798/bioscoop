@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\film;
+use App\chair;
 use Illuminate\Http\Request;
 
-class FilmController extends Controller
+class ChairController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,6 @@ class FilmController extends Controller
     public function index()
     {
         //
-        return view('films/index');
     }
 
     /**
@@ -42,10 +41,10 @@ class FilmController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\film  $film
+     * @param  \App\chair  $chair
      * @return \Illuminate\Http\Response
      */
-    public function show(film $film)
+    public function show(chair $chair)
     {
         //
     }
@@ -53,10 +52,10 @@ class FilmController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\film  $film
+     * @param  \App\chair  $chair
      * @return \Illuminate\Http\Response
      */
-    public function edit(film $film)
+    public function edit(chair $chair)
     {
         //
     }
@@ -65,10 +64,10 @@ class FilmController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\film  $film
+     * @param  \App\chair  $chair
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, film $film)
+    public function update(Request $request, chair $chair)
     {
         //
     }
@@ -76,10 +75,10 @@ class FilmController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\film  $film
+     * @param  \App\chair  $chair
      * @return \Illuminate\Http\Response
      */
-    public function destroy(film $film)
+    public function destroy(chair $chair)
     {
         //
     }

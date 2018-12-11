@@ -45,9 +45,6 @@ Route::get('/mix' , function ()
 
 
 
-
-
-
 Route::get('/search', function () {
     return view('search');
 });
@@ -56,3 +53,14 @@ Route::post('/searchresult', 'ApiController@index')->name('search.function');
 
 
 Route::get('/filmpage', 'ApiController@show') ;
+
+
+
+
+
+
+// ADMIN SIDE
+
+Route::get('/prijs' , function () {
+    return view('prijs');
+});
