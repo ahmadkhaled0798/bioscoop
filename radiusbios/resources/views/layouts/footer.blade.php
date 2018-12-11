@@ -10,7 +10,7 @@
 
 
     <!-- Scripts -->
-
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -75,7 +75,6 @@
             </hr>
         </div>
     </div>
-        </div>
 </section>
 
 </body>

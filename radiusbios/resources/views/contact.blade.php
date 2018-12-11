@@ -16,10 +16,7 @@
 <div class="contact-page">
 
 
-    <div class="map">
-        <h1>contact</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2478.090174668728!2d4.778021715502817!3d51.60323631151284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c69f990d127d8b%3A0x1e825fb420ca913c!2sRadius+College!5e0!3m2!1sen!2snl!4v1542702678514" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
+
 
     <div class="content">
 
@@ -54,7 +51,10 @@
             </form>
         </div>
     </div>
-
+    <div class="map">
+        <h1>Locatie</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2478.090174668728!2d4.778021715502817!3d51.60323631151284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c69f990d127d8b%3A0x1e825fb420ca913c!2sRadius+College!5e0!3m2!1sen!2snl!4v1542702678514" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
 </div>
 @include('layouts.footer')
 </body>

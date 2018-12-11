@@ -10,6 +10,7 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -18,7 +19,7 @@
             <a class="navbar-brand" href="home">Bioscoop</a>
         </div>
         <ul class="nav navbar-nav">
-            <li><a href="films">films</a></li>
+            <li class="active"><a href="films">films</a></li>
             <li><a href="contact">contact</a></li>
             <li><a href="faq">FAQ</a></li>
 

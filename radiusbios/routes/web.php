@@ -11,6 +11,8 @@
 |
 */
 
+use App\User;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -37,30 +39,8 @@ Route::get('/test' , function ()
     return view('testapi1');
 });
 
-Route::get('/mix' , function ()
+Route::get('/dbtest' , function ()
 {
-    return view('mix');
+    return User::all();
 });
 
-
-
-
-Route::get('/search', function () {
-    return view('search');
-});
-
-Route::post('/searchresult', 'ApiController@index')->name('search.function');
-
-
-Route::get('/filmpage', 'ApiController@show') ;
-
-
-
-
-
-
-// ADMIN SIDE
-
-Route::get('/prijs' , function () {
-    return view('prijs');
-});
