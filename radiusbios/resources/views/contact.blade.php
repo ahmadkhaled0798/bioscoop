@@ -21,32 +21,41 @@
     <div class="content">
 
         <div class="gegevens">
-            <h2>Contactgegevens</h2>
+            <h1>Contactgegevens</h1>
 
             <p>Hoofdlocatie:	Terheijdenseweg 350 4826 AA Breda</p>
             <p>Telefoon:	076 573 34 44</p>
             <p>E-mailadres:	radiuscollege@rocwb.nl</p>
-            <p>openingstijden :</p>
-            <p>parkeren</p>
+
+            <h1>Openingstijden :</h1>
+            <p>Maandag 00:00 tot 00:00</p>
+            <p>Dinsdag 00:00 tot 00:00</p>
+            <p>Woensdag 00:00 tot 00:00</p>
+            <p>Donderdag 00:00 tot 00:00</p>
+            <p>Vrijdag 00:00 tot 00:00</p>
+            <p>Zaterdag 00:00 tot 00:00</p>
+            <p>Zondag 00:00 tot 00:00</p>
+
+            <h1>Parkeren</h1>
             <p>Rond het Chassé Theater is voldoende parkeergelegenheid. Op loopafstand vindt u: parkeergarage Het Turfschip, parkeergarage Chassé parking (let op: beperkt aantal plekken beschikbaar!), parkeerterrein Chasséveld en parkeerterrein Beyerd/Vlaszak. Op koopavond donderdag en koopzondag is het druk, maak op die dagen gebruik van de Premium Parking. Voor rolstoelgebruikers zijn er speciale parkeerplaatsen naast het theater en in Chassé parking. </p>
 
         </div>
         <div class="formulier">
 
-            <h2>Contactformulier</h2>
+            <h1>Contactformulier</h1>
 
             <form action="" method="post" >
                 @csrf
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Jou naam..">
+                <input type="text" id="name" name="name" placeholder="Uw naam..">
 
                 <label for="email">email adress</label>
-                <input type="email" id="email" name="email" placeholder="Jou emailadress..">
+                <input type="email" id="email" name="email" placeholder="Uw email..">
 
                 <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="jou bericht.." style="height:200px"></textarea>
+                <textarea id="subject" name="subject" placeholder="Uw bericht.." style="height:200px"></textarea>
 
-                <input type="submit" value="send form">
+                <input type="submit" value="Versturen">
 
             </form>
         </div>

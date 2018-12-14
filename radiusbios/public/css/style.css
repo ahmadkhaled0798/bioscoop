@@ -7,6 +7,18 @@ a , h1 , h2 , h3 , h4 , h5 , p , label , button{
     color: #ffb700;
 }
 
+h1{
+    color: #ffb700;
+}
+
+p{
+    color: black;
+}
+
+.row p {
+    color: #ffb700;
+}
+
 
 .faq-content{
     margin-left: 100px;
@@ -30,7 +42,7 @@ a , h1 , h2 , h3 , h4 , h5 , p , label , button{
     margin-left: 100px;
 }
 .map, h1{
-    padding-bottom: 50px;
+    padding-bottom: 15px;
 }
 
 .content{
@@ -56,9 +68,8 @@ a , h1 , h2 , h3 , h4 , h5 , p , label , button{
 /* Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
-    padding: 60px 0;
+    /* padding: 60px 0; */
     margin-top: 100px;
-
 }
 
 section .section-title {
@@ -172,7 +183,7 @@ input[type=submit]:hover {
 
 }
 .navnavbar-nav , ul , span{
- /*margin-left: 50px;*/
+    /*margin-left: 50px;*/
 }
 .home-page{
     padding-top: 100px;
@@ -238,5 +249,5 @@ input[type=submit]:hover {
     color:#000;
 }
 .container{
-    margin-top: 100px;
+    margin: 20px 0;
 }

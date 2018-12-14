@@ -21,9 +21,9 @@
 <div class="home-page">
 
     <div class="w3-content w3-display-container">
-        <img class="mySlides" src="https://via.placeholder.com/1000x500">
-        <img class="mySlides" src="https://via.placeholder.com/1000x500">
-        <img class="mySlides" src="https://via.placeholder.com/1000x500">
+        <img class="mySlides" src="https://via.placeholder.com/1000x300">
+        <img class="mySlides" src="https://via.placeholder.com/1000x300">
+        <img class="mySlides" src="https://via.placeholder.com/1000x300">
         <div class="w3-center w3-display-bottommiddle" style="width:100%">
             <div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
             <div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
@@ -33,7 +33,7 @@
         </div>
     </div>
     <div class="top-movies">
-        <h1>top movies</h1>
+        <h1>Top movies</h1>
     </div>
 
 
@@ -41,8 +41,8 @@
 
         @for($i = 0; $i <= 3; $i++)
             <div class="images-content">
-                <a href=""><img style="-webkit-user-select: none;" src="https://img.omdbapi.com/?i=tt2093100&amp;apikey=c8307ab5"></a>
-                <h3>name movie</h3>
+                <a href=""><img style="-webkit-user-select: none;height: 180px;width: 130px;" src="https://img.omdbapi.com/?i=tt2093100&amp;apikey=c8307ab5"></a>
+                <h3>Name movie</h3>
             </div>
         @endfor
 
