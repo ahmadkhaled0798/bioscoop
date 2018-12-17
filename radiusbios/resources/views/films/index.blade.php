@@ -34,6 +34,54 @@
                     <a href="#" class="w3-bar-item w3-button">26-11-2018</a>
                     <a href="#" class="w3-bar-item w3-button">27-11-2018</a>
 
+            <div class="top">
+                <div class="title"><h1>Films en tijden</h1></div>
+
+                <div class="film-search">
+                    <form action="{{route('search.function')}}" method="POST" >
+                        <label>Enter Movie Name</label>
+                        <input type="text" name="movie_name">
+
+                        <button class="w3-button w3-black" type="submit">Search</button>
+                        @csrf
+                    </form>
+                </div>
+
+                <div class="w3-dropdown-hover w3-right">
+                    <button class="w3-button w3-black">Kies een datum</button>
+                    <div class="w3-dropdown-content w3-bar-block w3-border">
+                        <div id="myBtnContainer">
+                            <button class="btn" onclick="filterSelection('all')">Alle datums</button>
+                            <button class="btn" onclick="filterSelection('7-12-18')">7-12-18</button>
+                            <button class="btn" onclick="filterSelection('8-12-18')">8-12-18</button>
+                            <button class="btn" onclick="filterSelection('9-12-18')">9-12-18</button>
+                            <button class="btn" onclick="filterSelection('10-12-18')">10-12-18</button>
+                            <button class="btn" onclick="filterSelection('11-12-18')">11-12-18</button>
+                            <button class="btn" onclick="filterSelection('12-12-18')">12-12-18</button>
+                            <button class="btn" onclick="filterSelection('13-12-18')">13-12-18</button>
+                            <button class="btn" onclick="filterSelection('14-12-18')">14-12-18</button>
+                            <button class="btn" onclick="filterSelection('15-12-18')">15-12-18</button>
+                            <button class="btn" onclick="filterSelection('16-12-18')">16-12-18</button>
+                            <button class="btn" onclick="filterSelection('17-12-18')">17-12-18</button>
+                            <button class="btn" onclick="filterSelection('18-12-18')">18-12-18</button>
+
+
+
+                            {{--<button class="btn" onclick="filterSelection({{gmdate($date_format, $today)}})">{{gmdate($date_format, $today)}}</button>--}}
+                            {{--<button class="btn" onclick="filterSelection({{gmdate($date_format, $tomorrow1)}})">{{gmdate($date_format, $tomorrow1)}}</button>--}}
+                            {{--<button class="btn" onclick="filterSelection({{gmdate($date_format, $tomorrow2)}})">{{gmdate($date_format, $tomorrow2)}}</button>--}}
+                            {{--<button class="btn" onclick="filterSelection({{gmdate($date_format, $tomorrow3)}})">{{gmdate($date_format, $tomorrow3)}}</button>--}}
+                            {{--<button class="btn" onclick="filterSelection({{gmdate($date_format, $tomorrow4)}})">{{gmdate($date_format, $tomorrow4)}}</button>--}}
+                            {{--<button class="btn" onclick="filterSelection({{gmdate($date_format, $tomorrow5)}})">{{gmdate($date_format, $tomorrow5)}}</button>--}}
+                            {{--<button class="btn" onclick="filterSelection({{gmdate($date_format, $tomorrow6)}})">{{gmdate($date_format, $tomorrow6)}}</button>--}}
+                            {{--<button class="btn" onclick="filterSelection({{gmdate($date_format, $tomorrow7)}})">{{gmdate($date_format, $tomorrow7)}}</button>--}}
+                            {{--<button class="btn" onclick="filterSelection({{gmdate($date_format, $tomorrow8)}})">{{gmdate($date_format, $tomorrow8)}}</button>--}}
+                            {{--<button class="btn" onclick="filterSelection({{gmdate($date_format, $tomorrow9)}})">{{gmdate($date_format, $tomorrow9)}}</button>--}}
+                            {{--<button class="btn" onclick="filterSelection({{gmdate($date_format, $tomorrow10)}})">{{gmdate($date_format, $tomorrow10)}}</button>--}}
+                            {{--<button class="btn" onclick="filterSelection({{gmdate($date_format, $tomorrow11)}})">{{gmdate($date_format, $tomorrow11)}}</button>--}}
+                            {{--<button class="btn" onclick="filterSelection({{gmdate($date_format, $tomorrow12)}})">{{gmdate($date_format, $tomorrow12)}}</button>--}}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

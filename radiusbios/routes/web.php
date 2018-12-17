@@ -39,6 +39,7 @@ Route::get('/faq' , function (){
 Route::get('/privacy' , function () {
     return view('privacy');
 });
+
 Route::get('/test' , function ()
 {
     return view('testapi1');
@@ -49,3 +50,52 @@ Route::get('/dbtest' , function ()
     return User::all();
 });
 
+<<<<<<< Updated upstream
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Route::get('/filmplanner' , function () {
+    return view('employees.filmplanner');
+});
+
+Route::get('/search', function () {
+    return view('search');
+});
+
+Route::post('/searchresult', 'ApiController@index')->name('search.function');
+
+
+Route::get('/filmpage', 'ApiController@show') ;
+>>>>>>> Stashed changes

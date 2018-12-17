@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\film;
 use Illuminate\Http\Request;
+use Validator;
 
 class FilmController extends Controller
 {
@@ -25,7 +26,7 @@ class FilmController extends Controller
      */
     public function create()
     {
-        //
+        return view('filmplanner');
     }
 
     /**
@@ -36,7 +37,28 @@ class FilmController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Validator::make($request->all(), [
+            'hall' => 'required|between:1, 5',
+            'date' => 'required|date',
+            'start_at' => 'required|time',
+            'end_at' => 'required|time',
+            'film' => 'required|string'
+
+        ])->validate();
+
+
+
+        $films = new Film();
+        $films->hall= $request->hall;
+        $films->date= $request->date;
+        $films->start_at= $request->start_at;
+        $films->end_at= $request->end_at;
+        $films->film= $request->film;
+
+        $films->save();
+
+        return redirect('filmplanner')
+            ->with('success', 'Film successfully planned.');
     }
 
     /**

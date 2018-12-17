@@ -252,6 +252,32 @@ input[type=submit]:hover {
     margin: 20px 0;
 }
 
+<<<<<<< HEAD
+=======
+.container1 .form-group{
+    padding-top: 10px;
+}
+
+.container1 button{
+    background-color:#a94442;
+    border-color:  #f4c242;
+    color:#f4c242 ;
+}
+
+.container1 button:hover{
+    background-color:#222222;
+    border-color:  #f4c242;
+    color: #f4c242 ;
+}
+.btn-link{
+    color: #f4c242;
+}
+
+.btn-link:hover{
+    color: #a94442;
+}
+
+>>>>>>> master
 .head{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -288,7 +314,11 @@ input[type=submit]:hover {
 
 .container3{
     margin-top: 100px;
+<<<<<<< HEAD
 
+=======
+   
+>>>>>>> master
 
 }
 
@@ -312,3 +342,57 @@ input[type=submit]:hover {
     border-color:  #f4c242;
     color: #f4c242 ;
 }
+<<<<<<< HEAD
+=======
+
+.w3-dropdown-hover {
+    float:left;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-right:480px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.filmplannen{
+    display:flex;
+    justify-content:space-around;
+}
+
+.filterDiv {
+    display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+>>>>>>> master
