@@ -18,6 +18,8 @@ class CreateTicketsTable extends Migration
             $table->boolean('ticket_checked_in');
             $table->boolean('ticket_canceled');
             $table->integer('ticket_price');
+            $table->integer('loveseat_percentage');
+
             $table->timestamps();
         });
     }
