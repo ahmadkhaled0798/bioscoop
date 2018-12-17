@@ -20,10 +20,15 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home1', 'HomeController@index1')->name('home1');
 Route::get('/films', 'FilmController@index')->name('film');
 
 Route::get('/contact' , function (){
     return view('contact');
+});
+
+Route::get('/mix' , function (){
+    return view('mix');
 });
 
 Route::get('/faq' , function (){
