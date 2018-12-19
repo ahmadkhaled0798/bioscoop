@@ -31,7 +31,7 @@ if (!empty($_GET['movie'])) {
 //    $array = json_decode($json, true);
 }
 ?>
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8"/>

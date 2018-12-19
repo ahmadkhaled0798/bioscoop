@@ -14,7 +14,7 @@ class PrijsController extends Controller
      */
     public function index()
     {
-
+        return view('prijs');
     }
 
     /**
@@ -57,7 +57,7 @@ class PrijsController extends Controller
      */
     public function edit($id)
     {
-        return view('prijs');
+        
     }
 
     /**

@@ -50,7 +50,6 @@ Route::get('/dbtest' , function ()
     return User::all();
 });
 
-<<<<<<< HEAD
 
 
 // ADMIN SIDE
@@ -61,38 +60,6 @@ Route::get('/dbtest' , function ()
 
 
 Route::resource('prijs', 'prijsController');
-=======
-<<<<<<< Updated upstream
-=======
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -110,5 +77,3 @@ Route::post('/searchresult', 'ApiController@index')->name('search.function');
 
 
 Route::get('/filmpage', 'ApiController@show') ;
->>>>>>> Stashed changes
->>>>>>> master

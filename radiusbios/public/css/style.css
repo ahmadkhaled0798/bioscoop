@@ -29,9 +29,7 @@ p{
     padding-top: 100px;
 }
 
-.container-fluid{
 
-}
 .contact-page{
     padding-top: 100px;
     margin-left: 100px;
@@ -182,9 +180,7 @@ input[type=submit]:hover {
     justify-content: flex-end;
 
 }
-.navnavbar-nav , ul , span{
-    /*margin-left: 50px;*/
-}
+
 .home-page{
     padding-top: 100px;
 }
@@ -253,7 +249,6 @@ input[type=submit]:hover {
     margin: 20px 0;
 }
 
-<<<<<<< HEAD
 .container1{
      margin-top: 100px;
      margin-left: 370px;
@@ -265,10 +260,7 @@ input[type=submit]:hover {
 
 }
 
-=======
-<<<<<<< HEAD
-=======
->>>>>>> master
+
 .container1 .form-group{
     padding-top: 10px;
 }
@@ -292,10 +284,7 @@ input[type=submit]:hover {
     color: #a94442;
 }
 
-<<<<<<< HEAD
-=======
->>>>>>> master
->>>>>>> master
+
 .head{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -332,16 +321,6 @@ input[type=submit]:hover {
 
 .container3{
     margin-top: 100px;
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-
-=======
-   
->>>>>>> master
->>>>>>> master
-
 }
 
 .container3 h2{
@@ -364,26 +343,20 @@ input[type=submit]:hover {
     border-color:  #f4c242;
     color: #f4c242 ;
 }
-<<<<<<< HEAD
 
 .w3-dropdown-hover {
     float: left;
-=======
-<<<<<<< HEAD
-=======
+}
 
 .w3-dropdown-hover {
-    float:left;
->>>>>>> master
     position: relative;
     display: inline-block;
     cursor: pointer;
     margin: 0 auto;
-    margin-right:480px;
+    margin-right: 480px;
 }
 
 
-<<<<<<< HEAD
 /*================================================PRIJS PAGE=========================================================================*/
 
 .center{
@@ -408,24 +381,7 @@ input[type=submit]:hover {
     width: 191px;
     margin-right: 45px;
 }
-=======
 
-
-
-
-
->>>>>>> master
-
-
-
-
-
-
-
-
-
-<<<<<<< HEAD
-=======
 
 
 
@@ -439,7 +395,7 @@ input[type=submit]:hover {
     justify-content:space-around;
 }
 
->>>>>>> master
+
 .filterDiv {
     display: none; /* Hidden by default */
 }
@@ -453,7 +409,3 @@ input[type=submit]:hover {
     background-color: #666;
     color: white;
 }
-<<<<<<< HEAD
-=======
->>>>>>> master
->>>>>>> master
