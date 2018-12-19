@@ -35,7 +35,7 @@
 
     <form action="" method="POST">
         @csrf
-        <div>
+        <div class="">
             <label for="hall">Zaal nummer</label>
             <input id="hall" type="number" name="hall" min="1" max="5">
 

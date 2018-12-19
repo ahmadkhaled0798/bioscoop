@@ -77,3 +77,4 @@ Route::post('/searchresult', 'ApiController@index')->name('search.function');
 
 
 Route::get('/filmpage', 'ApiController@show') ;
+
