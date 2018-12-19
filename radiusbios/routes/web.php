@@ -44,3 +44,13 @@ Route::get('/dbtest' , function ()
     return User::all();
 });
 
+
+
+// ADMIN SIDE
+
+//Route::get('/prijs' , function () {
+//    return view('prijs');
+//});
+
+
+Route::resource('prijs', 'prijsController');
