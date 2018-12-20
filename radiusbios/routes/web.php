@@ -11,13 +11,30 @@
 |
 */
 
-use App\User;
+
 
 Route::get('/', function () {
     return view('welcome');
 });
 
 Auth::routes();
+
+Route::post('/login/custom', [
+    'uses' => 'loginController@login',
+    'as'   => 'login.custom'
+]);
+
+Route::group(['middelware' => 'auth'], function () {
+
+    Route::get('/home', function () {
+        return view('home');
+    })->name('home');
+
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+
+});
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/home1', 'HomeController@index1')->name('home1');
