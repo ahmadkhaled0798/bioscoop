@@ -14,7 +14,7 @@
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home/index');
 });
 
 Auth::routes();
@@ -26,9 +26,9 @@ Route::post('/login/custom', [
 
 Route::group(['middelware' => 'auth'], function () {
 
-    Route::get('/home', function () {
-        return view('home');
-    })->name('home');
+    Route::get('/homepage', function () {
+        return view('homepage');
+    })->name('homepage');
 
     Route::get('/dashboard', function () {
         return view('dashboard');

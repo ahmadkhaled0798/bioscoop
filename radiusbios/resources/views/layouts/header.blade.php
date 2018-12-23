@@ -25,16 +25,33 @@
             <li><a href="privacy">Privacy</a></li>
 
         </ul>
-        <ul class="navnavbar-nav">
 
+        @if (Auth::check())
 
-            <span><ul><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></ul></span>
-            <ul>
-                @if (Route::has('register'))
-                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                @endif
+            <ul class="navnavbar-nav">
+                <a class="dropdown-item" href="{{ route('logout') }}"
+                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                    {{ __('Logout') }}
+                </a>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
             </ul>
-        </ul>
+
+        @else
+            <ul class="navnavbar-nav">
+
+
+                <span><ul><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></ul></span>
+                <ul>
+                    @if (Route::has('register'))
+                        <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                    @endif
+                </ul>
+            </ul>
+          @endif
 
 
     </div>
