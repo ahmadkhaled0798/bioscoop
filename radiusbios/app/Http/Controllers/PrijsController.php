@@ -14,7 +14,8 @@ class PrijsController extends Controller
      */
     public function index()
     {
-        return view('prijs');
+        $ticket = ticket::find(1);
+        return view('prijs')->with('data', $ticket);
     }
 
     /**
@@ -70,6 +71,18 @@ class PrijsController extends Controller
     public function update(Request $request, $id)
     {
 
+        //validator toevoegen
+
+        $ticket = ticket::find($id);
+        
+        $ticket->ticket_price = request('prijs-normale-stoel');
+        $ticket->loveseat_percentage = request('percentage-loveseat');
+
+        $ticket->save();
+
+        return redirect(route('prijs.index'))
+            ->with('succes', 'Price and Percentage has been updated');
+        
     }
 
     /**

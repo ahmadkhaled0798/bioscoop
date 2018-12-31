@@ -10,27 +10,35 @@
     <link rel="stylesheet" href="/public/css/style.css">
 </head>
 <body>
+    <!-- Header -->
     @include ('layouts.header')
 
     <div class="center">
-
+        
+        <!-- Title -->
         <h1>Welcome on the edit page</h1>
 
-        <form method="#" action="#">
+        <!-- Messages -->
+        @if(session('succes'))
+            {{session('succes')}}
+        @endif
+
+        <!-- Form -->
+        <form method="POST" action="{{route('prijs.update', 1)}}">
+            @method('PATCH')
             @csrf
             <div class="grid">
-
                 <div class="prijs">
                     <label for="prijs-normale-stoel">€</label>
                     <input class="input" type="number" name="prijs-normale-stoel"
-                    placeholder="10">
+                    placeholder='{{$data->ticket_price}}'>
                     <label for="prijs-normale-stoel">prijs normale stoel</label>
                 </div>
 
                 <div class="percentage">
                     <label for="percentage-loveseat">%</label>
                     <input class="input" type="number" name="percentage-loveseat"
-                           placeholder="10">
+                    placeholder='{{$data->loveseat_percentage}}'>
                     <label for="percentage-loveseat">percentage loveseat</label>
                 </div>
 
@@ -40,6 +48,7 @@
         </form>
     </div>
 
+    <!-- Footer -->
     @include ('layouts.footer')
 </body>
 </html>
