@@ -410,7 +410,14 @@ input[type=submit]:hover {
     color: white;
 }
 
+.filmtoevoegen{
 
-.container{
-    margin-top: 100px;
+}
+
+.planner_top{
+
+}
+
+.navbar-fixed-top{
+    position:initial;
 }

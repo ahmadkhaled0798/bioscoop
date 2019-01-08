@@ -95,3 +95,9 @@ Route::post('/searchresult', 'ApiController@index')->name('search.function');
 
 Route::get('/filmpage', 'ApiController@show') ;
 
+Route::resources([
+    'films' => 'FilmController',
+    'plans' => 'PlannerController',
+    //stuurt de goede routes door naar functions van bijbehorende controller
+]);
+

@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Film;
+use App\Planner;
 use Illuminate\Http\Request;
 use Validator;
 
-class FilmController extends Controller
+class PlannerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,9 +16,6 @@ class FilmController extends Controller
     public function index()
     {
         //
-
-        return view('films/index');
-
     }
 
     /**
@@ -28,10 +25,7 @@ class FilmController extends Controller
      */
     public function create()
     {
-        $filmTitles = Film::all();
-
-        return view('/employees/filmplanner')
-            ->with('filmTitles', $filmTitles);
+        return view('filmplanner');
     }
 
     /**
@@ -42,29 +36,38 @@ class FilmController extends Controller
      */
     public function store(Request $request)
     {
-
         Validator::make($request->all(), [
-            'film_title' => 'required|string'
+            'hall' => 'required|between:1, 3',
+            'date' => 'required|date',
+            'start_at' => 'required',
+            'end_at' => 'required',
+            'film' => 'required|string|different:Geen films toegevoegd'
 
         ])->validate();
 
-        $films = new Film();
-        $films->film_title = $request->film_title;
 
-        $films->save();
+
+        $planners = new Planner();
+        $planners->hall= $request->hall;
+        $planners->date= $request->date;
+        $planners->start_at= $request->start_at;
+        $planners->end_at= $request->end_at;
+        $planners->film= $request->film;
+
+        $planners->save();
 
         return redirect('films/create')
-            ->with('success_film', 'Film successfully added.');
+            ->with('success_planner', 'Film successfully planned.');
 
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\film  $film
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(film $film)
+    public function show($id)
     {
         //
     }
@@ -72,10 +75,10 @@ class FilmController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\film  $film
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(film $film)
+    public function edit($id)
     {
         //
     }
@@ -84,10 +87,10 @@ class FilmController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\film  $film
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, film $film)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -95,10 +98,10 @@ class FilmController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\film  $film
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(film $film)
+    public function destroy($id)
     {
         //
     }

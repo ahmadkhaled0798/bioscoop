@@ -15,14 +15,16 @@
 
     @include('employees.partials.header')
 
-    <div><h2>FILM TOEVOEGEN</h2></div>
+    @include('employees.partials.notification')
+
+    <div class="filmtoevoegen"><h2>FILM TOEVOEGEN</h2></div>
     {{--{{route('films.store')}}--}}
 
-    <form action="" method="POST">
+    <form action="{{route('films.store')}}" method="POST">
         @csrf
         <div>
-            <label for="film">Film toevoegen</label>
-            <input id="film" type="text" name="film">
+            <label for="film_title">Type hier de film title</label>
+            <input id="film_title" type="text" name="film_title">
         </div>
 
         <div>
@@ -30,14 +32,12 @@
         </div>
     </form>
 
-    <h2>FILM PLANNER</h2>
-    {{--{{route('plannings.store')}}--}}
-
-    <form action="" method="POST">
+    <form action="{{route('plans.store')}}" method="POST">
         @csrf
-        <div class="">
+        <div class="planner_top">
+            <h2>FILM PLANNER</h2>
             <label for="hall">Zaal nummer</label>
-            <input id="hall" type="number" name="hall" min="1" max="5">
+            <input id="hall" type="number" name="hall" min="1" max="3">
 
             <div>
                 <label for="date">Datum</label>
@@ -45,55 +45,62 @@
             </div>
         </div>
 
-
         <div class="filmplannen">
 
-
             <div class="planner">
                 <div>
-                    <label for="begintijd">Begintijd</label>
-                    <input id="begintijd" type="time" name="begintijd">
+                    <label for="start_at">Begintijd</label>
+                    <input id="start_at" type="time" name="start_at">
                 </div>
                 <div>
-                    <label for="eindtijd">Eindtijd</label>
-                    <input id="eindtijd" type="time" name="eindtijd">
+                    <label for="end_at">Eindtijd</label>
+                    <input id="end_at" type="time" name="end_at">
                 </div>
+
                 <div>
-                    <label for="film">Film</label>
-                    <input id="film" type="text" name="film">
+                    <label for="film">Kies Film</label>
+                    <select id="film" name="film">
+
+                        @forelse($filmTitles->reverse() as $film)
+                            <option value="{{ $film->film_title}}">{{ $film->film_title}}</option>
+                        @empty
+                            <option value="Geen films toegevoegd">Geen films toegevoegd</option>
+                        @endforelse
+
+                    </select>
                 </div>
             </div>
 
 
-            <div class="planner">
-                <div>
-                    <label for="begintijd">Begintijd</label>
-                    <input id="begintijd" type="time" name="begintijd">
-                </div>
-                <div>
-                    <label for="eindtijd">Eindtijd</label>
-                    <input id="eindtijd" type="time" name="eindtijd">
-                </div>
-                <div>
-                    <label for="film">Film</label>
-                    <input id="film" type="text" name="film">
-                </div>
-            </div>
+            {{--<div class="planner">--}}
+                {{--<div>--}}
+                    {{--<label for="begintijd">Begintijd</label>--}}
+                    {{--<input id="begintijd" type="time" name="begintijd">--}}
+                {{--</div>--}}
+                {{--<div>--}}
+                    {{--<label for="eindtijd">Eindtijd</label>--}}
+                    {{--<input id="eindtijd" type="time" name="eindtijd">--}}
+                {{--</div>--}}
+                {{--<div>--}}
+                    {{--<label for="film">Film</label>--}}
+                    {{--<input id="film" type="text" name="film">--}}
+                {{--</div>--}}
+            {{--</div>--}}
 
-            <div class="planner">
-                <div>
-                    <label for="begintijd">Begintijd</label>
-                    <input id="begintijd" type="time" name="begintijd">
-                </div>
-                <div>
-                    <label for="eindtijd">Eindtijd</label>
-                    <input id="eindtijd" type="time" name="eindtijd">
-                </div>
-                <div>
-                    <label for="film">Film</label>
-                    <input id="film" type="text" name="film">
-                </div>
-            </div>
+            {{--<div class="planner">--}}
+                {{--<div>--}}
+                    {{--<label for="begintijd">Begintijd</label>--}}
+                    {{--<input id="begintijd" type="time" name="begintijd">--}}
+                {{--</div>--}}
+                {{--<div>--}}
+                    {{--<label for="eindtijd">Eindtijd</label>--}}
+                    {{--<input id="eindtijd" type="time" name="eindtijd">--}}
+                {{--</div>--}}
+                {{--<div>--}}
+                    {{--<label for="film">Film</label>--}}
+                    {{--<input id="film" type="text" name="film">--}}
+                {{--</div>--}}
+            {{--</div>--}}
 
 
         </div>
