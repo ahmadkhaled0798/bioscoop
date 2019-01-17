@@ -28,8 +28,8 @@ class FilmController extends Controller
      */
     public function create()
     {
-        $filmTitles = Film::all();
-
+        $filmTitles = Film::all()->unique("film_title");;
+//        $filmTitles = array_unique($filmTitles, film_title);
         return view('/employees/filmplanner')
             ->with('filmTitles', $filmTitles);
     }

@@ -66,11 +66,11 @@
 
                 <div class="film-search">
                     <form action="{{route('search.function')}}" method="POST" >
+                        @csrf
                         <label>Enter Movie Name</label>
                         <input type="text" name="movie_name">
 
                         <button class="w3-button w3-black" type="submit">Search</button>
-                        @csrf
                     </form>
                 </div>
 

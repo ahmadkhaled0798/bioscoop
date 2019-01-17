@@ -10,6 +10,16 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        window.onload = function() {
+            var src = document.getElementById("start_at"),
+                dst = document.getElementById("end_at");
+            src.addEventListener('input', function() {
+                dst.value = src.value;
+            });
+        };
+
+    </script>
 </head>
 <body>
 
@@ -52,14 +62,11 @@
                     <label for="start_at">Begintijd</label>
                     <input id="start_at" type="time" name="start_at">
                 </div>
-                <div>
-                    <label for="end_at">Eindtijd</label>
-                    <input id="end_at" type="time" name="end_at">
-                </div>
 
                 <div>
                     <label for="film">Kies Film</label>
                     <select id="film" name="film">
+
 
                         @forelse($filmTitles->reverse() as $film)
                             <option value="{{ $film->film_title}}">{{ $film->film_title}}</option>

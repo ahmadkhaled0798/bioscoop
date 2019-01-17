@@ -1,0 +1,56 @@
+Logo en naam bedrijf
+zelf logo maken - radius bios
+welke taal moet site
+nederlands - kan engels
+moet paypal te gebruiken zijn via sandbox omgeving zodat je niet hoeft te registreren
+ja
+
+
+
+V2
+
+stijl blad
+
+rode versie vind hij de beste
+wilt meer kleur, meer afwisseling optie geel/goud in afwerking 
+anderen kleuren kan ook voor afwerking
+
+wireframes v1
+
+bezoek registreren
+na scannen meteen aanwezig niet op extra knop drukken
+extra invulveld voor ticket id zelf invullen
+
+dag selecteren en dan verdelen in ochtend middag avond / sorteren op dagen en tijden
+nice to have
+
+wireframe v2
+
+geen barcode scan
+
+
+goede dingen die bij v1 moeten
+
+
+gelijk tijden bij film
+
+home page met top films
+
+kaart bij contact
+
+backup de bios stoelen van v2 v1 is degen die het nu is
+
+moet de tijden kunnen aanpassen van v1 films plannen
+
+start tijden + api film tijden en een kwartier
+
+v2 bestelling succesvol scherm gebruiken als pop up
+
+laat profesioneel ogen 
+
+contact paginas combineren met bewegende map 
+
+
+
+
+

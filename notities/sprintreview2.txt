@@ -1,0 +1,106 @@
+Slideshow kleiner
+ 
+Poster kleiner
+
+
+
+Mischien alle twee tegelijk te zien op homepage
+
+
+
+Filmdpage lettertypes gelijk 
+Invoerveld groot met kleine tekst
+
+
+
+Contact eerder te zien op contactpage
+
+Invoerveld groot met kleine tekst
+
+Tekst iets groter kijken of het beter leesbaar is
+
+
+
+Faq groot blok kleine letters
+
+
+
+Rode knop zelfde kleur als tekst
+
+Uitlijningen gelujk houden
+
+
+
+Meer consistent werken 
+
+Goede datatypes gebruiken in database voor ruimte
+
+
+
+Varchar gebruiken ipv string in database
+
+
+
+Tabel naam id zoals halls_id
+
+Niet alleen id     (Tip)
+
+
+
+Optie om losse tabel voor stoel te maken 
+Kijk naar view virtuele tabel   (Tip)
+
+
+
+Filter knoppen beter stijlen ruimte kleiner hoogte zwarte achtergrond en alles afgerond of hoekig voor knoppen 
+
+
+Rode kleur gebruiken voor accent in header en footer
+
+
+
+Home page :
+
+-Slideshow kleiner 
+
+-Covers van top films kleiner
+
+Films page :
+
+-Films tijden & search film goed lijnen
+
+-Input veld kleiner maken
+
+
+Contact page :
+
+-Ook hier te grote map
+
+-Mogelijke oplossing = map onderaan of contactgegevens en contactformulier
+ naast de map plaatsen
+
+-Lettergrootte vergroten
+
+-Bij contactformulier ook de input fields kleiner maken
+
+-Button zelfde kleur als de rest van de site (niet rode kleur)
+
+FAQ page :
+
+-Ook hier kleiner maken
+
+-tekst iets groter
+
+Login page :
+
+-Button zelfde kleur als de rest van de site (niet rode kleur)
+
+
+
+Register page :
+
+-Button zelfde kleur als de rest van de site (niet rode kleur)
+
+-De labels en input velden goed uitlijnen
+
+

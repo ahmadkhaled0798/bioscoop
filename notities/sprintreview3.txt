@@ -1,0 +1,42 @@
+rollen
+
+geen laravel pagina zien bij uitloggen
+stijl van login naar de stijl van de rest 
+
+
+
+// berijd meer voor als je incomplete producten laat zien | praat over hoe het eruit moet zien/wat het moet worden of doen
+// geef zelf aan als er functies niet werken die het wel zouden moeten 
+// stijl beter als je oplevert als de code dan nog niet alles doet verberg je dat meer | als wat je presenteert er goed uit ziet straal je meer vertrouwen uit dan als je alles los laat zien
+// kom meer terug op wat er in de vorige sprint niet goed ging en laat zien dat het er nu wel goed uit ziet
+// luister naar wat de klant geeft als veranderingen 
+// begin vergadering positief met laten zien dat alles van de vorige vergadering verbetert is en dan laten zien wat er nieuw toegevoegd is
+// stijl als eerste zo win je vertrouwen van klant, alles ziet er uit als een geheel
+// eidtijd berekenen dmv tijdsduur uit de api + 15min 
+
+stoelen
+
+stijl moet nog veranderd worden naar stijl van de anderen paginas
+
+
+
+prijs/percentage
+
+niet meer dan 100% bij love seats
+teksten bij de invulvelden moet consistent zijn links of rechts
+
+
+
+
+
+contact page label kleur of grootte veranderen
+knop kleur veranderen
+film en tijden kies een datum veld beter uitlijnen en ipv grijs moet deze zwart zijn
+homepage slideshow + topfilms zonder te scrollen helemaal laten zien
+
+
+
+
+
+
+
